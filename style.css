@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: white;
+    --red: red;
+    --grey: rgb(93, 93, 93);
+    --light-blue: rgb(51, 150, 208);
+    --dark-blue: rgb(102, 102, 255);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+    color: black;
+}
+
+/* Loading Animation CSS */
+
+#preloader-animation {
+    position: fixed;
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: 1s;
+    background-color: var(--white);
+}
+
+#preloader-animation img {
+    width: 50px;
+    height: 50px;
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Header and Navigation bar CSS */
+
+header .main-header {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+header .main-header .main-header-logo {
+    max-width: 250px;
+    width: 100%;
+}
+
+.main-header .header-details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-header .header-details img {
+    display: flex;
+    width: 30px;
+    height: 30px;
+}
+
+.header-details .header-detail-text p:first-child {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.header-details .header-detail-text p {
+    font-weight: 500;
+}
+
+.header-flag-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+@media screen and (max-width:1060px) {
+    .main-header .header-details {
+        display: none;
+    }
+
+    .main-header .doctor-image {
+        display: none;
+    }
+}
+
+/* Responsive Navigation Bar */
+
+.nav-bg-color {
+    background-color: var(--light-blue);
+}
+
+nav {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+nav .navbar-links {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav .navbar-links a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.nav-search-container {
+    position: relative;
+}
+
+.nav-search-container .search-icon {
+    position: absolute;
+    filter: invert();
+    width: 20px;
+    height: 20px;
+    top: 17px;
+    left: 10px;
+}
+
+nav .nav-search {
+    padding: 20px 10px 20px 50px;
+    color: var(--white);
+    outline: none;
+    border: none;
+    background-color: var(--dark-blue);
+}
+
+nav .nav-search::placeholder {
+    color: var(--white);
+}
+
+nav .menu-icon {
+    display: none;
+}
+
+nav .menu-icon img {
+    filter: invert();
+    width: 30px;
+    height: 35px;
+}
+
+/* Mobile Responsive Navigation bar CSS */
+.mobile-menu {
+    display: none;
+    position: absolute;
+}
+
+.mobile-menu .mobile-links {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.mobile-menu .mobile-links a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+@media screen and (max-width:1060px) {
+    nav .navbar-links {
+        display: none;
+    }
+
+    nav .menu-icon {
+        display: flex;
+    }
+}
+
+/* Hero Section CSS */
+
+.hero-bg-image {
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    z-index: -100;
+    filter: brightness(90%);
+}
+
+.hero-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: var(--white);
+}
+
+.hero-container>div {
+    max-width: 570px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hero-container .hero-heading {
+    font-weight: 500;
+}
+
+.hero-container>div span {
+    font-weight: 600;
+    color: var(--red);
+}
+
+.hero-container>div h1 {
+    font-size: 40px;
+}
+
+.hero-container .hero-btn {
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 40px;
+    border: none;
+    outline: none;
+    color: var(--white);
+    background-color: var(--light-blue);
+}
+
+.hero-container .hero-btn:hover {
+    cursor: pointer;
+    background-color: var(--dark-blue);
+}
+
+/* Navigation Section CSS */
+
+.section-navigation {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section-navigation ul {
+    width: 100%;
+    margin: 0 auto;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.section-navigation ul a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--grey);
+}
+
+@media screen and (max-width: 1060px) {
+    .section-navigation {
+        display: none;
+    }
+}
+
+/* Overview Section CSS */
+
+.section-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.treatment-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    padding: 50px 0;
+    border-bottom: 2px dashed var(--light-blue);
+}
+
+.treatment-container>div {
+    flex: 1;
+}
+
+.treatment-container>div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.treatment-container h2 span {
+    color: var(--red);
+}
+
+.treatment-container p {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--grey);
+}
+
+.treatment-container .treatment-image img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 900px) {
+    .treatment-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .treatment-container .treatment-image img {
+        max-width: 100%;
+    }
+}
+
+/* Form Sections CSS */
+
+.additional-sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.additional-sections>div {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.additional-sections .additional-details {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 50px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--grey);
+    border-bottom: 2px dashed var(--light-blue);
+}
+
+.additional-details h2 span {
+    color: var(--red);
+}
+
+.additional-details ul {
+    list-style: circle;
+    list-style-position: inside;
+}
+
+.additional-details ul li::marker {
+    font-size: 20px;
+    color: var(--light-blue);
+}
+
+@media screen and (max-width: 900px) {
+    .additional-sections {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Sticky form CSS Here */
+
+.sticky-form {
+    max-width: 350px;
+    min-width: 300px;
+    width: 100%;
+    position: sticky;
+    top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: var(--white);
+    box-shadow: 0px 0px 3px var(--grey);
+}
+
+.sticky-form h3 {
+    font-size: 25px;
+    color: var(--light-blue);
+}
+
+.sticky-form input,
+textarea {
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(189, 189, 189);
+}
+
+.sticky-form .submit-btn {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    color: var(--white);
+    background-color: var(--light-blue);
+    transition: background-color 0.3s;
+}
+
+.sticky-form .submit-btn:hover {
+    cursor: pointer;
+    background-color: var(--dark-blue);
+}
