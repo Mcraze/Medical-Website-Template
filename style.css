@@ -22,6 +22,24 @@ h2 {
     color: black;
 }
 
+/* Custom Scrollbar CSS */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--light-blue);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-blue);
+}
+
 /* Loading Animation CSS */
 
 #preloader-animation {
@@ -119,7 +137,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    padding: 0 20px;
+    padding: 0 0 0 20px;
 }
 
 nav .navbar-links {
@@ -172,6 +190,8 @@ nav .menu-icon img {
 .mobile-menu {
     display: none;
     position: absolute;
+    width: 100%;
+    background-color: var(--light-blue);
 }
 
 .mobile-menu .mobile-links {
@@ -194,6 +214,13 @@ nav .menu-icon img {
 
     nav .menu-icon {
         display: flex;
+    }
+}
+
+@media screen and (min-width: 1060px) {
+    .mobile-menu {
+        display: none;
+        visibility: hidden;
     }
 }
 
