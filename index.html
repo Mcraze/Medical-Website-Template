@@ -35,8 +35,10 @@
         <div class="main-header">
 
             <div>
+                <a href="index.html">
                 <img src="assets/images/MainLogo.webp" alt="Aafiya Mediretreats" height="80" width="250"
-                    class="main-header-logo">
+                class="main-header-logo">
+                </a>
             </div>
 
             <div class="doctor-image">
@@ -87,13 +89,13 @@
                 </div>
                 <div>
                     <ul class="navbar-links">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Treatments +</a></li>
-                        <li><a href="">Destinations +</a></li>
-                        <li><a href="">Hospitals</a></li>
-                        <li><a href="">FAQs</a></li>
-                        <li><a href="">Request a Quote</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#treatment">Treatments +</a></li>
+                        <li><a href="#destination">Destinations +</a></li>
+                        <li><a href="#hospitals">Hospitals</a></li>
+                        <li><a href="#faq">FAQs</a></li>
+                        <li><a href="#quote">Request a Quote</a></li>
                     </ul>
                 </div>
                 <div class="nav-search-container">
@@ -105,21 +107,21 @@
 
         <div class="mobile-menu">
             <ul class="mobile-links">
-                <li><a href="">Home</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Treatments +</a></li>
-                <li><a href="">Destinations +</a></li>
-                <li><a href="">Hospitals</a></li>
-                <li><a href="">FAQs</a></li>
-                <li><a href="">Request a Quote</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#treatment">Treatments +</a></li>
+                <li><a href="#destination">Destinations +</a></li>
+                <li><a href="#hospitals">Hospitals</a></li>
+                <li><a href="#faq">FAQs</a></li>
+                <li><a href="#quote">Request a Quote</a></li>
             </ul>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section>
-            <img src="assets/images/HeroBackground.webp" alt="BG Image" width="100%" height="400px" loading="lazy"
+        <!-- Home Section Begins Here -->
+        <section id="home">
+            <img src="assets/images/HeroBackground.webp" alt="BG Image" width="100%" height="400px" loading="eager"
                 class="hero-bg-image">
             <div class="hero-container">
                 <div>
@@ -137,27 +139,30 @@
                 </div>
             </div>
         </section>
+        <!-- Home Section Ends Here -->
 
-        <!-- Secondary Navigation Section -->
+        <!-- Secondary Navigation Section Begins Here -->
         <section>
-            <nav class="section-navigation">
+            <nav class="section-navigation" id="treatment">
                 <ul>
-                    <li><a href="">Overview</a></li>
-                    <li><a href="">Eligibility</a></li>
-                    <li><a href="">Preparation</a></li>
-                    <li><a href="">About Treatment</a>
-                    <li><a href="">Post-Treatment Care</a></li>
-                    <li><a href="">Recovery Tips</a></li>
-                    <li><a href="">FAQs</a></li>
-                    <li><a href="">Patient Stories</a></li>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#eligibility">Eligibility</a></li>
+                    <li><a href="#preparation">Preparation</a></li>
+                    <li><a href="#about-treatment">About Treatment</a>
+                    <li><a href="#post-treatment">Post-Treatment Care</a></li>
+                    <li><a href="#recovery">Recovery Tips</a></li>
+                    <li><a href="#faq">FAQs</a></li>
+                    <li><a href="#stories">Patient Stories</a></li>
                 </ul>
             </nav>
         </section>
+        <!-- Secondary Navigation Section Ends Here -->
+
         <hr>
 
-        <!-- Overview Section -->
+        <!-- Overview Section Begins Here -->
         <section class="section-container">
-            <div class="treatment-container">
+            <div class="treatment-container" id="overview">
                 <div>
                     <h2>Treatment Overview<span>.</span></h2>
                     <p>
@@ -184,16 +189,18 @@
                 </div>
             </div>
         </section>
+        <!-- Overview Section Ends Here -->
 
 
-        <!-- Eligibility for Treatment Section -->
+        <!-- Additional Treatment Section Begins Here -->
         <section class="section-container">
 
             <div class="additional-sections">
 
                 <div>
 
-                    <div class="additional-details">
+                    <!-- Eligibility for Treatment Section -->
+                    <div class="additional-details" id="eligibility">
                         <h2>Eligibility for Treatment<span>.</span></h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita officia nulla ut voluptatem
                             quae adipisci unde dicta mollitia fugiat quia, incidunt architecto impedit illum qui! Rerum
@@ -208,7 +215,8 @@
                         </ul>
                     </div>
 
-                    <div class="additional-details">
+                    <!-- Preparation Before Treatment Section -->
+                    <div class="additional-details" id="preparation">
                         <h2>Preparation Before Treatment<span>.</span></h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita officia nulla ut voluptatem
                             quae adipisci unde dicta mollitia fugiat quia, incidunt architecto impedit illum qui! Rerum
@@ -223,7 +231,8 @@
                         </ul>
                     </div>
 
-                    <div class="additional-details">
+                    <!-- About Treatment Section -->
+                    <div class="additional-details" id="about-treatment">
                         <h2>About Treatment<span>.</span></h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita officia nulla ut voluptatem
                             quae adipisci unde dicta mollitia fugiat quia, incidunt architecto impedit illum qui! Rerum
@@ -238,7 +247,8 @@
                         </ul>
                     </div>
 
-                    <div class="additional-details">
+                    <!-- Post Treatment Section -->
+                    <div class="additional-details" id="post-treatment">
                         <h2>Post-Treatment Care Treatment<span>.</span></h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita officia nulla ut voluptatem
                             quae adipisci unde dicta mollitia fugiat quia, incidunt architecto impedit illum qui! Rerum
@@ -253,7 +263,8 @@
                         </ul>
                     </div>
 
-                    <div class="additional-details">
+                    <!-- Recovery Tips Section -->
+                    <div class="additional-details" id="recovery">
                         <h2>Treatment Recovery Tips<span>.</span></h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita officia nulla ut voluptatem
                             quae adipisci unde dicta mollitia fugiat quia, incidunt architecto impedit illum qui! Rerum
@@ -268,7 +279,8 @@
                         </ul>
                     </div>
 
-                    <div class="additional-details">
+                    <!-- Treatment FAQ section -->
+                    <div class="additional-details" id="faq">
                         <h2>Treatment FAQs<span>.</span></h2>
 
                         <div class="faq-container">
@@ -307,6 +319,8 @@
                     </div>
 
                 </div>
+
+                <!-- Sticky Form Begins Here -->
                 <form action="" class="sticky-form">
                     <h3>Need Help?</h3>
                     <p>Just let us know. We will be happy to assist you.</p>
@@ -314,10 +328,10 @@
                         <input type="text" placeholder="Full Name">
                     </div>
                     <div>
-                        <input type="text" placeholder="Email">
+                        <input type="email" placeholder="Email">
                     </div>
                     <div>
-                        <input type="text" placeholder="Phone Number">
+                        <input type="number" placeholder="Phone Number">
                     </div>
                     <div>
                         <textarea rows="3" placeholder="Describe your Treatment Requirement"></textarea>
@@ -326,13 +340,15 @@
                         <button type="submit" class="submit-btn">Send Enquiry</button>
                     </div>
                 </form>
+                <!-- Form Ends Here -->
 
             </div>
 
-            <!-- Patient Stories Section CSS -->
-            <div class="additional-details patient-stories">
+            <!-- Patient Stories Section Begins Here -->
+            <div class="additional-details patient-stories" id="stories">
                 <h2>Patient Stories & Videos<span>.</span></h2>
 
+                <!-- Patient Stories Carousel Begins Here -->
                 <div class="owl-carousel owl-theme patient-carousel">
 
                     <div class="patient-story-container">
@@ -402,12 +418,14 @@
                     </div>
 
                 </div>
+                <!-- Patient Stories Carousel Ends Here -->
             </div>
+            <!-- Patient Stories Section Ends Here -->
 
         </section>
+        <!-- Additional Treatment Section Ends Here -->
 
-        <!-- Doctor Details Container and Swiper using Owl Carousel -->
-
+        <!-- Doctor Details Container Begins Here -->
         <section>
             <div class="doctor-details">
                 <div class="doctor-heading">
@@ -461,11 +479,10 @@
 
             </div>
         </section>
-
+        <!-- Doctor Details Container Ends Here -->
 
         <!-- Recommended Hospitals Section Begins Here -->
-
-        <section>
+        <section id="hospitals">
             <div class="hospital-details">
                 <div class="doctor-heading">
                     <p>Hospitals</p>
@@ -527,6 +544,7 @@
 
             </div>
         </section>
+        <!-- Recommended Hospitals Section Ends Here -->
 
     </main>
 
@@ -596,7 +614,9 @@
 
             <div class="f-company-details">
                 <div>
-                    <img src="assets/images/FooterLogo.webp" alt="Footer Logo" width="350" height="100" loading="lazy">
+                    <a href="index.html">
+                        <img src="assets/images/FooterLogo.webp" alt="Footer Logo" width="350" height="100" loading="lazy">
+                    </a>
                 </div>
                 <div class="f-company-info">
                     <h4>About Aafiya Mediretreats</h4>
@@ -631,16 +651,16 @@
             </div>
         </div>
     </footer>
+    <!-- Footer Ends Here -->
 
-    <!-- Preloader Script -->
+
+    <!-- Preloader Animation Script -->
     <script>
-
         var Preloader = document.getElementById('preloader-animation');
 
         function stopPreloader() {
             Preloader.style.display = 'none';
         }
-
     </script>
 
     <!-- Responsive Navigation Script -->
@@ -659,9 +679,7 @@
     </script>
 
     <!-- Accordion Script -->
-
     <script src="scripts/accordion.js"></script>
-
 
     <!-- Owl Carousel CDN links -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -671,7 +689,9 @@
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!-- Owl Carousel Modification Js -->
     <script>
+        // For Patient Stories
         $('.patient-carousel').owlCarousel({
             loop: true,
             margin: 20,
@@ -688,6 +708,7 @@
             }
         })
 
+        // For Doctor and Hospital Sections
         $('.doctor-carousel').owlCarousel({
             loop: true,
             margin: 20,
