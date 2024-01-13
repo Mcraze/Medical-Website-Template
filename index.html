@@ -13,6 +13,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body onload="stopPreloader()">
@@ -297,10 +305,6 @@
                         </div>
                     </div>
 
-                    <div class="additional-details">
-                        <h2>Patient Stories & Videos<span>.</span></h2>
-                    </div>
-
                 </div>
                 <form action="" class="sticky-form">
                     <h3>Need Help?</h3>
@@ -324,6 +328,115 @@
 
             </div>
 
+            <!-- Patient Stories Section CSS -->
+            <div class="additional-details patient-stories">
+                <h2>Patient Stories & Videos<span>.</span></h2>
+    
+                <div class="owl-carousel owl-theme">
+
+                    <div class="patient-story-container">
+                        <div class="p-story-heading">
+                            <h4>Underwent procedure for retinal detachment</h4>
+                            <div>
+                                <img src="assets/icons/quote.svg" alt="Quotes" width="30" height="30">
+                            </div>
+                        </div>
+                        <div class="p-story-content">
+                            <img src="assets/images/PatientStory.webp" alt="Patient and Doctor Image" loading="lazy">
+                        </div>
+                        <div class="p-profile-details">
+                            <div>
+                                <img src="assets/images/PersonProfile.webp" alt="Profile Pic" width="50" height="50">
+                            </div>
+                            <div>
+                                <h4>Luke Olfert</h4>
+                                <p>New York, USA</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="patient-story-container">
+                        <div class="p-story-heading">
+                            <h4>Underwent Colonoscopy and Medical Management</h4>
+                            <div>
+                                <img src="assets/icons/quote.svg" alt="Quotes" width="30" height="30">
+                            </div>
+                        </div>
+                        <div class="p-story-content">
+                            <img src="assets/images/PatientStory2.webp" alt="Patient and Doctor Image" loading="lazy">
+                        </div>
+                        <div class="p-profile-details">
+                            <div>
+                                <img src="assets/images/PersonProfile.webp" alt="Profile Pic" width="50" height="50">
+                            </div>
+                            <div>
+                                <h4>Timmie Smith</h4>
+                                <p>Sydeny, Australia</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="patient-story-container">
+                        <div class="p-story-heading">
+                            <h4>Underwent Knee Surgery and Replacement</h4>
+                            <div>
+                                <img src="assets/icons/quote.svg" alt="Quotes" width="30" height="30">
+                            </div>
+                        </div>
+                        <div class="p-story-content">
+                            <img src="assets/images/PatientStory3.webp" alt="Patient and Doctor Image" loading="lazy">
+                        </div>
+                        <div class="p-profile-details">
+                            <div>
+                                <img src="assets/images/PersonProfile.webp" alt="Profile Pic" width="50" height="50">
+                            </div>
+                            <div>
+                                <h4>Jonathan James</h4>
+                                <p>Washington, DC</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Doctor Details Container and Swiper using Owl Carousel -->
+
+        <section>
+            <div class="doctor-details">
+                <div class="doctor-heading">
+                    <p>Doctors</p>
+                    <h2>Top Orthopedic <span>Doctors</span></h2>
+                </div>
+
+                <div class="owl-carousel owl-theme">
+
+                    <div class="patient-story-container">
+                        <div class="p-story-heading">
+                            <h4>Underwent procedure for retinal detachment</h4>
+                            <div>
+                                <img src="assets/icons/quote.svg" alt="Quotes" width="30" height="30">
+                            </div>
+                        </div>
+                        <div class="p-story-content">
+                            <img src="assets/images/PatientStory.webp" alt="Patient and Doctor Image" loading="lazy">
+                        </div>
+                        <div class="p-profile-details">
+                            <div>
+                                <img src="assets/images/PersonProfile.webp" alt="Profile Pic" width="50" height="50">
+                            </div>
+                            <div>
+                                <h4>Luke Olfert</h4>
+                                <p>New York, USA</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
         </section>
 
     </main>
@@ -357,6 +470,32 @@
     <!-- Accordion Script -->
 
     <script src="scripts/accordion.js"></script>
+
+
+    <!-- Owl Carousel CDN links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            dots: true,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                600: {
+                    items: 2,
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>

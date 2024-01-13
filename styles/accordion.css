@@ -20,12 +20,11 @@
     left: 10px;
 }
 
-.active,
-.accordion:hover {
+.accordion .active, .accordion:hover {
     background-color: #e1e1e1;
 }
 
-.active:before {
+.accordion.active:before {
     content: "\2212";
 }
 

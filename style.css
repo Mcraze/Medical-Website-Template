@@ -10,6 +10,7 @@
     --grey: rgb(93, 93, 93);
     --light-blue: rgb(51, 150, 208);
     --dark-blue: rgb(102, 102, 255);
+    --doctor-bg: #d8e3ed;
 }
 
 body {
@@ -405,6 +406,7 @@ nav .menu-icon img {
 
 .sticky-form h3 {
     font-size: 25px;
+    font-style: italic;
     color: var(--light-blue);
 }
 
@@ -434,4 +436,71 @@ textarea {
 .sticky-form .submit-btn:hover {
     cursor: pointer;
     background-color: var(--dark-blue);
+}
+
+/* Patient Stories section CSS */
+
+.patient-stories {
+    margin-top: 100px;
+    max-width: 800px;
+}
+.patient-stories h2 {
+    margin-bottom: 30px;
+}
+
+.owl-carousel .patient-story-container {
+    padding: 20px;
+    border: 1px solid rgb(168, 168, 168);
+}
+
+.patient-story-container .p-story-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.patient-story-container .p-story-content {
+    margin: 20px 0;
+}
+
+.patient-story-container .p-story-content img {
+    max-height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.patient-story-container .p-profile-details {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.patient-story-container .p-profile-details p {
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--grey);
+}
+
+
+/* Doctor Details Container CSS */
+
+.doctor-details {
+    padding: 70px 20px;
+    background-color: var(--doctor-bg);
+}
+
+.doctor-heading {
+    text-align: center;
+}
+
+.doctor-heading p {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    color: var(--red);
+}
+
+.doctor-details h2 span {
+    color: var(--dark-blue);
 }
