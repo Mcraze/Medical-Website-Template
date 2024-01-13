@@ -454,7 +454,7 @@ nav .menu-icon img {
 }
 
 .sticky-form input,
-textarea {
+.sticky-form textarea {
     max-width: 100%;
     min-width: 100%;
     width: 100%;
@@ -462,6 +462,10 @@ textarea {
     outline: none;
     border-radius: 5px;
     border: 1px solid rgb(189, 189, 189);
+}
+
+.sticky-form textarea {
+    min-height: 100px;
 }
 
 .sticky-form .submit-btn {
@@ -479,6 +483,13 @@ textarea {
 .sticky-form .submit-btn:hover {
     cursor: pointer;
     background-color: var(--dark-blue);
+}
+
+/* Disable spinners in Chrome */
+.sticky-form input[type="number"]::-webkit-inner-spin-button,
+.sticky-form input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* Patient Stories section CSS */
