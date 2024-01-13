@@ -8,8 +8,13 @@
     --white: white;
     --red: red;
     --grey: rgb(93, 93, 93);
-    --light-blue: rgb(51, 150, 208);
-    --dark-blue: rgb(102, 102, 255);
+    --light-blue: #4992ff;
+    --dark-blue: #0066ff;
+    --doctor-bg: #d8e3ed;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -19,6 +24,24 @@ body {
 h2 {
     font-size: 30px;
     color: black;
+}
+
+/* Custom Scrollbar CSS */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--light-blue);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-blue);
 }
 
 /* Loading Animation CSS */
@@ -118,7 +141,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    padding: 0 20px;
+    padding: 0 0 0 20px;
 }
 
 nav .navbar-links {
@@ -130,6 +153,11 @@ nav .navbar-links {
 nav .navbar-links a {
     text-decoration: none;
     color: var(--white);
+}
+
+nav .navbar-links a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
 .nav-search-container {
@@ -171,6 +199,8 @@ nav .menu-icon img {
 .mobile-menu {
     display: none;
     position: absolute;
+    width: 100%;
+    background-color: var(--light-blue);
 }
 
 .mobile-menu .mobile-links {
@@ -186,6 +216,11 @@ nav .menu-icon img {
     color: var(--white);
 }
 
+.mobile-menu .mobile-links a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
 @media screen and (max-width:1060px) {
     nav .navbar-links {
         display: none;
@@ -193,6 +228,13 @@ nav .menu-icon img {
 
     nav .menu-icon {
         display: flex;
+    }
+}
+
+@media screen and (min-width: 1060px) {
+    .mobile-menu {
+        display: none;
+        visibility: hidden;
     }
 }
 
@@ -246,10 +288,12 @@ nav .menu-icon img {
     outline: none;
     color: var(--white);
     background-color: var(--light-blue);
+    transition: transform 0.3s;
 }
 
 .hero-container .hero-btn:hover {
     cursor: pointer;
+    transform: scale(1.05);
     background-color: var(--dark-blue);
 }
 
@@ -405,11 +449,12 @@ nav .menu-icon img {
 
 .sticky-form h3 {
     font-size: 25px;
+    font-style: italic;
     color: var(--light-blue);
 }
 
 .sticky-form input,
-textarea {
+.sticky-form textarea {
     max-width: 100%;
     min-width: 100%;
     width: 100%;
@@ -417,6 +462,10 @@ textarea {
     outline: none;
     border-radius: 5px;
     border: 1px solid rgb(189, 189, 189);
+}
+
+.sticky-form textarea {
+    min-height: 100px;
 }
 
 .sticky-form .submit-btn {
@@ -434,4 +483,188 @@ textarea {
 .sticky-form .submit-btn:hover {
     cursor: pointer;
     background-color: var(--dark-blue);
+}
+
+/* Disable spinners in Chrome */
+.sticky-form input[type="number"]::-webkit-inner-spin-button,
+.sticky-form input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Patient Stories section CSS */
+
+.patient-stories {
+    margin-top: 100px;
+    max-width: 800px;
+}
+
+.patient-stories h2 {
+    margin-bottom: 30px;
+}
+
+.owl-carousel .patient-story-container {
+    padding: 20px;
+    border: 1px solid rgb(168, 168, 168);
+}
+
+.patient-story-container .p-story-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.patient-story-container .p-story-content {
+    margin: 20px 0;
+}
+
+.patient-story-container .p-story-content img {
+    max-height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.patient-story-container .p-profile-details {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.patient-story-container .p-profile-details p {
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--grey);
+}
+
+
+/* Doctor Details Container CSS */
+
+.doctor-details {
+    padding: 70px 20px;
+    background-color: var(--doctor-bg);
+}
+
+.doctor-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.doctor-heading p {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    color: var(--red);
+}
+
+.doctor-heading h2 span {
+    color: var(--dark-blue);
+}
+
+/* Doctor Carousel CSS */
+
+.doctor-carousel {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.doc-info-container {
+    padding: 20px;
+    background-color: var(--white);
+}
+
+.doc-image {
+    width: auto;
+    height: 350px;
+    margin-bottom: 30px;
+    background-color: pink;
+}
+
+.doc-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.doc-info h4 {
+    font-style: italic;
+    color: var(--red);
+}
+
+.doc-info p {
+    font-weight: 600;
+    color: var(--grey);
+}
+
+.doc-info .doc-degree {
+    font-size: 13px;
+}
+
+/* Doctor Details Container CSS */
+
+.hospital-details {
+    padding: 70px 20px;
+}
+
+/* Hospital Card CSS */
+
+.h-info-container {
+    border-radius: 10px;
+    border: 2px dashed var(--red);
+}
+
+.h-info-container .h-image img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    object-fit: cover;
+}
+
+.h-info-container .h-info {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.h-info-container .h-info h3 {
+    font-size: 22px;
+}
+
+.h-info-container .h-info p {
+    font-weight: 600;
+    font-size: 18px;
+    font-style: italic;
+    color: var(--red);
+    margin-bottom: 20px;
+}
+
+.hospital-sub-heading {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.hospital-sub-heading a {
+    color: var(--red);
+}
+
+/* Carousel Custom Dots Color CSS */
+
+.custom-dots {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-dots .owl-dot {
+    background: var(--grey) !important;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+}
+
+.custom-dots .owl-dot.active {
+    background: var(--light-blue) !important;
 }

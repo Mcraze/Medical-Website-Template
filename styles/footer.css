@@ -1,0 +1,195 @@
+.f-contact-section {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    color: var(--white);
+    background-color: var(--light-blue);
+}
+
+.f-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.f-contact-btn {
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: var(--white);
+    background-color: var(--dark-blue);
+    box-shadow: 0px 0px 2px var(--grey);
+    transition: transform 0.3s;
+}
+
+.f-contact-btn:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.main-footer {
+    padding: 20px;
+    background-color: #0b2432;
+}
+
+.f-links-container {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--white);
+    justify-content: space-between;
+}
+
+.f-links-container > div {
+    width: 25%;
+    padding: 20px 0;
+}
+
+.f-links-container h4 {
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.f-links-container ul {
+    list-style-type: none;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.f-links-container ul li::before {
+    content: '- ';
+    font-weight: bolder;
+    color: var(--light-blue);
+}
+
+@media screen and (max-width: 940px) {
+    .f-links-container > div {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .f-links-container > div {
+        width: 100%;
+    }
+}
+
+.f-seperator {
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.f-company-details {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: var(--white);
+}
+
+.f-company-details > div img {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+}
+
+.f-company-details .f-company-info {
+    max-width: 500px;
+}
+
+.f-company-details .f-company-info p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.f-company-details .f-follow-container {
+    min-width: 160px;
+}
+
+.f-company-details .f-social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.f-company-details .f-social-icons img {
+    filter: invert();
+    width: 25px;
+    height: 25px;
+}
+
+.f-contact-number {
+    color: var(--light-blue);
+}
+
+@media screen and (max-width: 940px) {
+    .f-company-details {
+        flex-direction: column;
+    }
+}
+
+.f-copyright-bg {
+    padding: 20px;
+    background-color: var(--light-blue);
+}
+
+.f-copyright {
+    max-width: 1250px;
+    margin: 0 auto;
+    font-size: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    color: var(--white);
+}
+
+.f-copyright > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+@media screen and (max-width: 940px) {
+    .f-copyright {
+        justify-content: center;
+    }
+}
+
+.f-card {
+    position: relative;
+    top: -70px;
+    padding: 20px;
+    font-size: 12px;
+    border-radius: 10px;
+    color: black;
+    background-color: var(--white);
+}
+
+.f-card .f-upper-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (max-width: 940px) {
+    .f-card {
+        display: none;
+    }
+}
