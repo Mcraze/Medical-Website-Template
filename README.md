@@ -21,5 +21,8 @@
 ### Project Preview Link:
 https://medical-website-test.netlify.app/
 
+### Project Screen Recording Link:
+[Click Here for Screen Recordings](https://drive.google.com/drive/folders/1KbcModPDMFvS2fslPuN4wBkRQNeDHHv9?usp=sharing)
+
 ### Project Screenshot:
 ![Aafiya-Mediretreats-Mitesh](https://github.com/Mcraze/Medical-Website-Template/assets/84672998/ca9d1a48-9245-4443-a2b8-fbbbb01f51a2)
