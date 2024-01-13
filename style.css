@@ -503,7 +503,7 @@ textarea {
     color: var(--red);
 }
 
-.doctor-details h2 span {
+.doctor-heading h2 span {
     color: var(--dark-blue);
 }
 
@@ -548,6 +548,11 @@ textarea {
     font-size: 13px;
 }
 
+/* Doctor Details Container CSS */
+
+.hospital-details {
+    padding: 70px 20px;
+}
 
 /* Carousel Custom Dots Color CSS */
 
@@ -568,4 +573,46 @@ textarea {
 
 .custom-dots .owl-dot.active {
     background: var(--light-blue) !important;
+}
+
+
+/* Hospital Card CSS */
+
+.h-info-container {
+    border-radius: 10px;
+    border: 2px dashed var(--red);
+}
+
+.h-info-container .h-image img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    object-fit: cover;
+}
+
+.h-info-container .h-info {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.h-info-container .h-info h3 {
+    font-size: 22px;
+}
+
+.h-info-container .h-info p {
+    font-weight: 600;
+    font-size: 18px;
+    font-style: italic;
+    color: var(--red);
+    margin-bottom: 20px;
+}
+
+.hospital-sub-heading {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.hospital-sub-heading a {
+    color: var(--red);
 }
