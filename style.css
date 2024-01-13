@@ -509,7 +509,6 @@ textarea {
 
 /* Doctor Carousel CSS */
 
-
 .doctor-carousel {
     max-width: 1200px;
     margin: 0 auto;
@@ -554,28 +553,6 @@ textarea {
     padding: 70px 20px;
 }
 
-/* Carousel Custom Dots Color CSS */
-
-.custom-dots {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.custom-dots .owl-dot {
-    background: var(--grey) !important;
-    width: 10px;
-    height: 10px;
-    margin: 0 5px;
-    border-radius: 50%;
-}
-
-.custom-dots .owl-dot.active {
-    background: var(--light-blue) !important;
-}
-
-
 /* Hospital Card CSS */
 
 .h-info-container {
@@ -615,4 +592,25 @@ textarea {
 
 .hospital-sub-heading a {
     color: var(--red);
+}
+
+/* Carousel Custom Dots Color CSS */
+
+.custom-dots {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-dots .owl-dot {
+    background: var(--grey) !important;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+}
+
+.custom-dots .owl-dot.active {
+    background: var(--light-blue) !important;
 }
