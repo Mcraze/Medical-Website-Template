@@ -171,3 +171,25 @@
         justify-content: center;
     }
 }
+
+.f-card {
+    position: relative;
+    top: -70px;
+    padding: 20px;
+    font-size: 12px;
+    border-radius: 10px;
+    color: black;
+    background-color: var(--white);
+}
+
+.f-card .f-upper-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (max-width: 940px) {
+    .f-card {
+        display: none;
+    }
+}
