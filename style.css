@@ -8,8 +8,8 @@
     --white: white;
     --red: red;
     --grey: rgb(93, 93, 93);
-    --light-blue: rgb(51, 150, 208);
-    --dark-blue: rgb(102, 102, 255);
+    --light-blue: #4992ff;
+    --dark-blue: #0066ff;
     --doctor-bg: #d8e3ed;
 }
 
