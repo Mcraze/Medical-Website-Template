@@ -331,8 +331,8 @@
             <!-- Patient Stories Section CSS -->
             <div class="additional-details patient-stories">
                 <h2>Patient Stories & Videos<span>.</span></h2>
-    
-                <div class="owl-carousel owl-theme">
+
+                <div class="owl-carousel owl-theme patient-carousel">
 
                     <div class="patient-story-container">
                         <div class="p-story-heading">
@@ -411,33 +411,55 @@
                     <h2>Top Orthopedic <span>Doctors</span></h2>
                 </div>
 
-                <div class="owl-carousel owl-theme">
+                <div class="owl-carousel owl-theme doctor-carousel">
 
-                    <div class="patient-story-container">
-                        <div class="p-story-heading">
-                            <h4>Underwent procedure for retinal detachment</h4>
-                            <div>
-                                <img src="assets/icons/quote.svg" alt="Quotes" width="30" height="30">
-                            </div>
+                    <div class="doc-info-container">
+                        <div class="doc-image">
                         </div>
-                        <div class="p-story-content">
-                            <img src="assets/images/PatientStory.webp" alt="Patient and Doctor Image" loading="lazy">
-                        </div>
-                        <div class="p-profile-details">
-                            <div>
-                                <img src="assets/images/PersonProfile.webp" alt="Profile Pic" width="50" height="50">
-                            </div>
-                            <div>
-                                <h4>Luke Olfert</h4>
-                                <p>New York, USA</p>
-                            </div>
+                        <div class="doc-info">
+                            <h4>Dr. Faique Falke</h4>
+                            <p>Musaffah Industrial - Abu Dhabi</p>
+                            <p class="doc-degree">Doctor Degree & Specialist</p>
                         </div>
                     </div>
-                    
+
+                    <div class="doc-info-container">
+                        <div class="doc-image">
+                        </div>
+                        <div class="doc-info">
+                            <h4>Luke Olfert</h4>
+                            <p>Abdul Industrial - United Kingdom</p>
+                            <p class="doc-degree">Doctor Degree & Masters</p>
+                        </div>
+                    </div>
+
+                    <div class="doc-info-container">
+                        <div class="doc-image">
+                        </div>
+                        <div class="doc-info">
+                            <h4>James Kingdom</h4>
+                            <p>Medical Ward - Washington, DC</p>
+                            <p class="doc-degree">Doctor Degree & Diploma</p>
+                        </div>
+                    </div>
+
+                    <div class="doc-info-container">
+                        <div class="doc-image">
+                        </div>
+                        <div class="doc-info">
+                            <h4>Martin Smith</h4>
+                            <p>Medical - United States America</p>
+                            <p class="doc-degree">Doctor Degree & PHD</p>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
         </section>
+
+
+        <!-- Recommended Hospitals Section Begins Here -->
 
     </main>
 
@@ -481,11 +503,12 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
-        $('.owl-carousel').owlCarousel({
+        $('.patient-carousel').owlCarousel({
             loop: true,
             margin: 10,
             dots: true,
             responsiveClass: true,
+            dotsClass: 'custom-dots',
             responsive: {
                 0: {
                     items: 1,
@@ -495,6 +518,25 @@
                 }
             }
         })
+
+        $('.doctor-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            dots: true,
+            dotsClass: 'custom-dots',
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                600: {
+                    items: 2,
+                },
+                950: {
+                    items: 3,
+                }
+            }
+        });
     </script>
 </body>
 

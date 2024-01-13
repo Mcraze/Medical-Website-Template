@@ -444,6 +444,7 @@ textarea {
     margin-top: 100px;
     max-width: 800px;
 }
+
 .patient-stories h2 {
     margin-bottom: 30px;
 }
@@ -492,6 +493,7 @@ textarea {
 
 .doctor-heading {
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .doctor-heading p {
@@ -503,4 +505,67 @@ textarea {
 
 .doctor-details h2 span {
     color: var(--dark-blue);
+}
+
+/* Doctor Carousel CSS */
+
+
+.doctor-carousel {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.doc-info-container {
+    padding: 20px;
+    background-color: var(--white);
+}
+
+.doc-image {
+    width: auto;
+    height: 350px;
+    margin-bottom: 30px;
+    background-color: pink;
+}
+
+.doc-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.doc-info h4 {
+    font-style: italic;
+    color: var(--red);
+}
+
+.doc-info p {
+    font-weight: 600;
+    color: var(--grey);
+}
+
+.doc-info .doc-degree {
+    font-size: 13px;
+}
+
+
+/* Carousel Custom Dots Color CSS */
+
+.custom-dots {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-dots .owl-dot {
+    background: var(--grey) !important;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+}
+
+.custom-dots .owl-dot.active {
+    background: var(--light-blue) !important;
 }
